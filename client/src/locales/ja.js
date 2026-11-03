@@ -4,8 +4,10 @@ export default {
     overview: '概要',
     inventory: '在庫',
     orders: '注文',
+    restocking: '補充',
     finance: '財務',
     demandForecast: '需要予測',
+    reports: 'レポート',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,12 +108,14 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '送信済み注文',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    days: '日',
     table: {
       orderNumber: '注文番号',
       orderId: '注文ID',
@@ -125,7 +129,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: '納期'
     }
   },
 
@@ -185,6 +190,34 @@ export default {
       change: '変化',
       trend: 'トレンド',
       period: '期間'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充',
+    description: '需要予測に基づく予算別の補充提案',
+    budgetLabel: '利用可能予算',
+    statsRecommended: '推奨品目数',
+    statsEstimatedCost: '推定合計コスト',
+    statsRemainingBudget: '残り予算',
+    recommendedItems: '推奨品目',
+    noRecommendations: 'この予算では補充できる品目がありません。予算を増やしてください。',
+    placeOrder: '注文する',
+    placingOrder: '注文処理中...',
+    orderSuccess: '注文{orderNumber}が正常に送信されました！',
+    viewInOrders: '注文で確認',
+    days: '日',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      category: 'カテゴリ',
+      trend: 'トレンド',
+      currentStock: '現在の在庫',
+      recommendedQty: '推奨数量',
+      unitCost: '単価',
+      estimatedCost: '推定コスト',
+      leadTime: '納期'
     }
   },
 

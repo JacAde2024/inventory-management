@@ -4,8 +4,10 @@ export default {
     overview: 'Overview',
     inventory: 'Inventory',
     orders: 'Orders',
+    restocking: 'Restocking',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    reports: 'Reports',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,12 +108,14 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    days: 'days',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -125,7 +129,8 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Delivery Lead Time'
     }
   },
 
@@ -185,6 +190,34 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Get budget-based restocking recommendations from demand forecasts',
+    budgetLabel: 'Available Budget',
+    statsRecommended: 'Items Recommended',
+    statsEstimatedCost: 'Total Estimated Cost',
+    statsRemainingBudget: 'Remaining Budget',
+    recommendedItems: 'Recommended Items',
+    noRecommendations: 'No items can be restocked within this budget. Try increasing your budget.',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing order...',
+    orderSuccess: 'Order {orderNumber} placed successfully!',
+    viewInOrders: 'View in Orders',
+    days: 'days',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      category: 'Category',
+      trend: 'Trend',
+      currentStock: 'Current Stock',
+      recommendedQty: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      estimatedCost: 'Estimated Cost',
+      leadTime: 'Lead Time'
     }
   },
 
